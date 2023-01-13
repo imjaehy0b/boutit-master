@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>유저정보</h1>
+<div id="menu">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</div>
+<div>
+    <tr>
+        <td th:text="|userDto=${session.userDto}|"></td><br>
+        <td th:text="|id=${session.userDto.getId()}|"></td><br>
+        <td th:text="|email=${session.userDto.getEmail()}|"></td><br>
+        <td th:text="|pwd=${session.userDto.getPwd()}|"></td><br>
+        <td th:text="|name=${session.userDto.getName()}|"></td><br>
+        <td th:text="|nickname=${session.userDto.getNickname()}|"></td><br>
+        <td th:text="|birth=${session.userDto.getBirth()}|"></td><br>
+        <td th:text="|phone=${session.userDto.getPhone()}|"></td><br>
+    </tr>
+</div>
+</body>
+</html>

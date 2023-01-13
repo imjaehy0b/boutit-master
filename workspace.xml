@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44a00d5c-d396-4e92-8ff6-8d0907d0d387" name="변경" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JwgeFdjbgbruHWXaIY3RqkGN3y" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leekunsin/Desktop/Programming/boutit-master/src/main/resources/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;871d1c34d739d5551deb17b876404723&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jscd.boutit" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jscd.boutit.dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jscd.boutit.dao" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BoutitApplication">
+    <configuration name="UserDaoImplTest.insertTestData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boutit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jscd.boutit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jscd.boutit.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jscd.boutit.dao.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="insertTestData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoImplTest.insertUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boutit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jscd.boutit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jscd.boutit.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jscd.boutit.dao.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="insertUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoImplTest.insertUser (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boutit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jscd.boutit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jscd.boutit.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jscd.boutit.dao.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="insertUser(com.jscd.boutit.User)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoImplTest.selectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boutit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jscd.boutit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jscd.boutit.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jscd.boutit.dao.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="selectUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoImplTest.userCount1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="boutit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jscd.boutit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jscd.boutit.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jscd.boutit.dao.UserDaoImplTest" />
+      <option name="METHOD_NAME" value="userCount1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoutitApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boutit-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jscd.boutit.BoutitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoutitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="boutit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jscd.boutit.BoutitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDaoImplTest.insertUser (1)" />
+        <item itemvalue="JUnit.UserDaoImplTest.insertUser (2)" />
+        <item itemvalue="JUnit.UserDaoImplTest.insertTestData" />
+        <item itemvalue="JUnit.UserDaoImplTest.selectUser" />
+        <item itemvalue="JUnit.UserDaoImplTest.userCount1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="44a00d5c-d396-4e92-8ff6-8d0907d0d387" name="변경" comment="" />
+      <created>1672994654189</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672994654189</updated>
+      <workItem from="1672994655642" duration="28000" />
+      <workItem from="1672995109748" duration="241000" />
+      <workItem from="1672995362143" duration="4124000" />
+      <workItem from="1672999795012" duration="1393000" />
+      <workItem from="1673083158891" duration="4000" />
+      <workItem from="1673096975713" duration="8046000" />
+      <workItem from="1673105101519" duration="365000" />
+      <workItem from="1673105480296" duration="4108000" />
+      <workItem from="1673109609793" duration="1657000" />
+      <workItem from="1673111286312" duration="169000" />
+      <workItem from="1673111460271" duration="3009000" />
+      <workItem from="1673114490888" duration="1167000" />
+      <workItem from="1673115751974" duration="526000" />
+      <workItem from="1673148988438" duration="308000" />
+      <workItem from="1673152016245" duration="2462000" />
+      <workItem from="1673159648449" duration="695000" />
+      <workItem from="1673160355413" duration="12289000" />
+      <workItem from="1673174654781" duration="1647000" />
+      <workItem from="1673181664573" duration="6095000" />
+      <workItem from="1673187847870" duration="129000" />
+      <workItem from="1673187992561" duration="2760000" />
+      <workItem from="1673191116294" duration="2000" />
+      <workItem from="1673191181886" duration="2000" />
+      <workItem from="1673226266949" duration="3385000" />
+      <workItem from="1673229832789" duration="2188000" />
+      <workItem from="1673233121559" duration="15000" />
+      <workItem from="1673233148440" duration="2149000" />
+      <workItem from="1673236238893" duration="38000" />
+      <workItem from="1673236287306" duration="573000" />
+      <workItem from="1673237040668" duration="2855000" />
+      <workItem from="1673240030758" duration="2270000" />
+      <workItem from="1673242310844" duration="429000" />
+      <workItem from="1673242754936" duration="372000" />
+      <workItem from="1673243137954" duration="2518000" />
+      <workItem from="1673247325383" duration="843000" />
+      <workItem from="1673248958484" duration="10000" />
+      <workItem from="1673248972839" duration="2305000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

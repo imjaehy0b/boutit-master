@@ -1,0 +1,188 @@
+<!--회원가입 페이지-->
+<!--signup.html-->
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .fieldError{
+            border-color: red;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<h1>회원가입</h1>
+<form role="form" action="/join" th:object="${userDto}" method="post" >
+    <div class="container">
+        <div class="form-group">
+            <label for="email" th:text="이메일"></label>
+            <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="이메일"/>
+            <input type="button" class="btn btn--sub" th:onclick="validateEmail()" value="이메일 확인">
+            <div><font id="id_feedback" size="2"></font></div>
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">비밀번호</label>
+            <input type="password"  class="form-control" id="pwd" name="pwd" placeholder="8~16자 영문 대 소문자, 숫자, 특수문자를 사용"
+                   th:field="*{pwd}" th:class="${#fields.hasErrors('pwd')}? 'form-control fieldError' : 'form-control'">
+            <p th:if="${#fields.hasErrors('pwd')}" th:errors="*{pwd}">Incorrect date</p>
+        </div>
+
+        <div class="form-group">
+            <label for="pwd2">비밀번호 확인</label>
+            <input type="password"  class="form-control" id="pwd2" name="pwd2" placeholder="비밀번호 확인">
+<!--                   th:field="*{pwd2}" th:class="${#fields.hasErrors('pwd2')}? 'form-control fieldError' : 'form-control'">-->
+<!--            <p th:if="${#fields.hasErrors('pwd2')}" th:errors="*{pwd2}">Incorrect date</p>-->
+            <div class="alert alert-success" id="alert-success">비밀번호가 일치합니다.</div>
+            <div class="alert alert-danger" id="alert-danger">비밀번호가 일치하지 않습니다.</div>
+        </div>
+
+
+        <div class="form-group">
+            <label th:for="name">이름</label>
+            <input type="text" class="form-control" placeholder="이름을 입력하세요"
+                   th:field="*{name}" th:class="${#fields.hasErrors('name')}? 'form-control fieldError' : 'form-control'">
+            <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Incorrect date</p>
+        </div>
+
+        <div class="form-group">
+            <label th:for="nickname">닉네임</label>
+            <input type="text"  class="form-control" placeholder="닉네임을 입력하세요" id="nickname" name="nickname"
+                   th:field="*{nickname}" th:class="${#fields.hasErrors('nickname')}? 'form-control fieldError' : 'form-control'">
+            <p th:if="${#fields.hasErrors('nickname')}" th:errors="*{nickname}">Incorrect date</p>
+            <div><font id="nick_feedback" size="2"></font></div>
+        </div>
+
+        <div class="form-group">
+            <label th:for="birth">생년월일</label>
+            <input type="text"  class="form-control datepicker" id="birth" name="birth" placeholder="생년월일">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">전화번호</label>
+            <input type="text"  class="form-control" id="phone" name="phone" placeholder="전화번호"
+                   th:field="*{phone}" th:class="${#fields.hasErrors('phone')}? 'form-control fieldError' : 'form-control'">
+            <p th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">Incorrect date</p>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">가입 완료</button>
+    </div>
+</form>
+
+<script type ="text/javascript">
+
+    function validateEmail(){
+        let email = $('#email').val();
+        let obj = new Object();
+        obj.email = email;
+        $.ajax({
+            type:'post',
+            url:'/emailCheck',
+            header:{ "Content-Type":"application/json"},
+            data:JSON.stringify(obj),
+            success:function (result){
+                alert(result)
+            },
+            error:function (error){
+                alert(error.responseText)
+            },
+        })
+    }
+
+
+    $('#email').keyup(function(){
+        let email = $('#email').val();
+
+        $.ajax({
+            url : "/emailCheck",
+            type : "post",
+            data : {email: email},
+            dataType : 'json',
+            success : function(result){
+                if(result == 1){
+                    $("#id_feedback").html('이미 사용중인 아이디입니다.');
+                    $("#id_feedback").attr('color','#dc3545');
+                } else{
+                    $("#id_feedback").html('사용할 수 있는 아이디입니다.');
+                    $("#id_feedback").attr('color','#2fb380');
+                }
+            },
+            error : function(){
+                alert("서버요청실패");
+            }
+        })
+    })
+
+    $('#nickname').keyup(function(){
+        let nickname = $('#nickname').val();
+
+        $.ajax({
+            url : "/nickCheck",
+            type : "post",
+            data : {nickname: nickname},
+            dataType : 'json',
+            success : function(result){
+                if(result == 1){
+                    $("#nick_feedback").html('이미 사용중인 닉네임입니다.');
+                    $("#nick_feedback").attr('color','#dc3545');
+                } else{
+                    $("#nick_feedback").html('사용할 수 있는 닉네임입니다.');
+                    $("#nick_feedback").attr('color','#2fb380');
+                }
+            },
+            error : function(){
+                alert("서버요청실패");
+            }
+        })
+    })
+
+    $(function(){
+        $("#alert-success").hide();//
+        $("#alert-danger").hide();
+        $("input").keyup(function(){
+            var pwd=$("#pwd").val();
+            var pwd2=$("#pwd2").val();
+            if(pwd != "" || pwd2 != ""){
+                if(pwd == pwd2){
+                    $("#alert-success").show();
+                    $("#alert-danger").hide();
+                    $("#submit").removeAttr("disabled");
+                }else{
+                    $("#alert-success").hide();
+                    $("#alert-danger").show();
+                    $("#submit").attr("disabled", "disabled");
+                }
+            }
+        });
+    });
+
+
+
+
+    //이메일 발송
+
+
+</script>
+</body>
+</html>
